@@ -23,7 +23,6 @@
             bottom: 50px; /* Position above the bottom */
             left: -100px; /* Start position off-screen to the left */
             display: none; /* Initially hidden */
-            transition: transform 0.5s; /* Smooth flip transition */
         }
 
         .stick {
@@ -35,8 +34,8 @@
 </head>
 <body>
 
-    <img id="dog" src="Dog.png" alt="White Labrador"> <!-- Replace with your dog image URL -->
-    <img id="stick" class="stick" src="Stick.png" alt="Stick"> <!-- Replace with your stick image URL -->
+    <img id="dog" src="DOG_IMAGE_URL" alt="White Labrador"> <!-- Replace with your dog image URL -->
+    <img id="stick" class="stick" src="STICK_IMAGE_URL" alt="Stick"> <!-- Replace with your stick image URL -->
 
     <script>
         // Select the dog and stick images
@@ -61,7 +60,7 @@
             function animateStick(time) {
                 const elapsed = time - startTime;
                 const progress = Math.min(elapsed / duration, 1);
-                const distance = (direction === 'left' ? -1 : 1) * (200 * progress); // 200px max distance
+                const distance = (direction === 'left' ? -1 : 1) * (window.innerWidth + 50) * progress; // Fly off screen
 
                 // Calculate the stick's curve
                 const curve = Math.sin(progress * Math.PI) * 50; // Slight curve effect
