@@ -36,7 +36,7 @@
 <body>
 
     <img id="dog" src="Dog.png" alt="White Labrador"> <!-- Replace with your dog image URL -->
-    <img id="stick" class="stick" src="STICK_IMAGE_URL" alt="Stick"> <!-- Replace with your stick image URL -->
+    <img id="stick" class="stick" src="Stick.png" alt="Stick"> <!-- Replace with your stick image URL -->
 
     <script>
         // Select the dog and stick images
